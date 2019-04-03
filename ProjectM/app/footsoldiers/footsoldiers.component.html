@@ -1,0 +1,8 @@
+<h2>Space Monkeys</h2>
+<ul class="footsoldiers">
+  <li *ngFor="let soldier of footsoldiers">
+    <a routerLink="/detail/{{soldier.id}}">
+      <span class="badge">{{soldier.id}}</span> {{soldier.name}}
+    </a>
+  </li>
+</ul>
